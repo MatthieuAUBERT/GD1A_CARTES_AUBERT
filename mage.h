@@ -13,7 +13,7 @@ class Mage
     Mage(std::string nom, int pv);
     void AfficherMage();
     void Invoquer();
-    void Attaquer(Monstre &cible);
+    void Attaquer(Monstre &Possede);
     void AttaqueMage(Mage &cible, int degatsMonstre);
     void recevoirDamage(int dommagesPris);
  

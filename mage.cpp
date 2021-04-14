@@ -81,12 +81,12 @@ void Mage::Invoquer(){
 
 }
 
-void Mage::Attaquer(Monstre &cible){
+void Mage::Attaquer(Monstre &Possede){
     int input;
     cout << "Quel monstre attaquera ? (Chiffre à entrer) ";
     cin >> input;
     Monstre Attaquant(listMonstre[input],listPV[input], listAtt[input],true);
-    Attaquant.Attaque(cible);
+    Attaquant.Attaque(Possede);
 }
 
 void Mage::AttaqueMage(Mage &cible, int degatsMonstre){
