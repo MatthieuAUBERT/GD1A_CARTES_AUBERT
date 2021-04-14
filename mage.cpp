@@ -81,12 +81,14 @@ void Mage::Invoquer(){
 
 }
 
-void Mage::Attaquer(Monstre &Possede){
+
+void Mage::Attaquer(Mage &cible , Monstre &defense){
+
     int input;
     cout << "Quel monstre attaquera ? (Chiffre à entrer) ";
     cin >> input;
     Monstre Attaquant(listMonstre[input],listPV[input], listAtt[input],true);
-    Attaquant.Attaque(Possede);
+    Attaquant.Attaque(defense);
 }
 
 void Mage::AttaqueMage(Mage &cible, int degatsMonstre){
@@ -101,3 +103,4 @@ void Mage::recevoirDamage(int dommagesPris){
         hpMage = 0;
     }
 }
+
